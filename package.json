@@ -6,12 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "supabase:types": "npx supabase gen types typescript --project-id amvshhoizeujspkgypke > src/lib/supabase/database.types.ts",
+    "supabase:link": "npx supabase link --project-ref amvshhoizeujspkgypke",
+    "supabase:push": "npx supabase db push",
+    "supabase:pull": "npx supabase db pull"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.554.0",
     "next": "16.0.3",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "recharts": "^3.4.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

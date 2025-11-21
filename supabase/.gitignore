@@ -1,0 +1,12 @@
+# Supabase CLI generated files
+.branches
+.temp
+.supabase/
+
+# Local environment files
+.env.local
+.env*.local
+
+# Backup files
+*.backup
+*.dump
